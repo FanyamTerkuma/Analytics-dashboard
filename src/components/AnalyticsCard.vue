@@ -1,5 +1,5 @@
 <template>
-    <div class="container bg-[#FFFFFF] flex flex-col gap-3 justify-center border shadow-sm rounded-xl px-4 py-3 size-fit">
+    <div class="container bg-[#FFFFFF] flex flex-col gap-3 justify-center border shadow-sm rounded-xl px-2 py-4 size-fit">
         <div class="flex justify-between items-center">
             <slot name="icon"></slot>
             <div class="mt-[-10%] w-[50%] h-[20%]"><Line :options="chartOptions" :data="chartData" height="30" width="60" /></div>
@@ -8,8 +8,8 @@
             <h1 class="text-lg capitalize font-medium text-[#898989]">{{ title }}</h1>
             <h2 class="text-2xl font-semibold text-[#3A3F51]">{{ amount }}</h2>
         </div>
-        <div class="flex gap-8 items-center">
-            <span class="flex items-center gap-2 text-primary text-xs bg-[#e7f9f4] p-2 rounded-full" :class="{ 'text-error bg-[#fdeaea]': plummet }">
+        <div class="flex gap-2 items-center">
+            <span class="flex items-center gap-2 text-primary text-xs bg-[#e7f9f4] p-2 rounded-full" :class="{ 'text-red-400 bg-[#fdeaea]': plummet }">
                 <slot name="trendIcon"></slot>
                 <p>{{ percentage }}%</p>
             </span>
@@ -17,7 +17,7 @@
         </div>
     </div>
 </template>
-
+<!-- TODO: dynamically change the line chart to match downwards and upwards trends -->
 <script setup>
     import { ref } from 'vue';
     import { Line } from 'vue-chartjs';

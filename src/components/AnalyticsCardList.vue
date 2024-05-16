@@ -8,7 +8,7 @@
                 <Trendup />
             </template>
         </AnalyticsCard>
-        <AnalyticsCard :title="'Total refund'" :amount="270" :percentage="23.5" :plummet="true">
+        <AnalyticsCard :title="'Total refund'" :amount="270" :percentage="23.5" plummet>
             <template #icon>
                 <RefundColored />
             </template>
@@ -16,7 +16,7 @@
                 <TrendDown />
             </template>
         </AnalyticsCard>
-        <AnalyticsCard :title="'Average sales'" :amount="1567" :percentage="23.5" :plummet="true">
+        <AnalyticsCard :title="'Average sales'" :amount="1567" :percentage="23.5" plummet>
             <template #icon>
                 <CartColored />
             </template>
