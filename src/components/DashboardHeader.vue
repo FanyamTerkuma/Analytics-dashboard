@@ -4,7 +4,7 @@
         <div class="flex justify-between items-center w-auto gap-4 px-3">
             <div class="border rounded-full flex items-center text-gray-400 justify-start gap-3 p-2 w-auto">
                 <SearchIcon />
-                <input type="text" placeholder="Search..." class="outline-none" />
+                <input type="text" placeholder="Search..." class="outline-none bg-transparent" />
             </div>
             <div class="flex items-center justify-start gap-2 cursor-pointer">
                 <Calendar />
