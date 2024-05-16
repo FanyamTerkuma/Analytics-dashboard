@@ -9,7 +9,7 @@
             <h2 class="text-2xl font-semibold text-[#3A3F51]">{{ amount }}</h2>
         </div>
         <div class="flex gap-8 items-center">
-            <span class="flex items-center gap-2 text-primary text-xs bg-[#e7f9f4] p-2 rounded-full">
+            <span class="flex items-center gap-2 text-primary text-xs bg-[#e7f9f4] p-2 rounded-full" :class="{ 'text-error bg-[#fdeaea]': plummet }">
                 <slot name="trendIcon"></slot>
                 <p>{{ percentage }}%</p>
             </span>
@@ -25,6 +25,9 @@
     ChartJS.register(Title, Tooltip, LineElement, PointElement, CategoryScale, LinearScale, Filler);
 
     const props = defineProps({
+        plummet: {
+            type: Boolean
+        },
         icon: {
             type: Object,
             required: true
