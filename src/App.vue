@@ -9,7 +9,7 @@
                     <AnalyticsCardList class="col-span-1" />
                 </div>
                 <div>
-                    <div>2</div>
+                    <div><Transactions /></div>
                 </div>
             </section>
         </main>
@@ -19,5 +19,6 @@
     import DashboardHeader from './components/DashboardHeader.vue';
     import SideBar from './components/SideBar.vue';
     import Chart from './components/Chart.vue';
+    import Transactions from './components/Transactions.vue';
     import AnalyticsCardList from './components/AnalyticsCardList.vue';
 </script>
