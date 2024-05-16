@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-white rounded-xl shadow-sm border p-2">
+    <div class="bg-[#FFFFFF] rounded-xl shadow-sm border p-2">
         <div class="flex justify-between items-center">
             <p class="font-semibold text-lg">Sales Trends</p>
             <div class="flex justify-center items-center gap-2">
@@ -10,7 +10,7 @@
                 </span>
             </div>
         </div>
-        <Bar :options="chartOptions" :data="chartData" />
+        <Bar height="111px" :options="chartOptions" :data="chartData" />
     </div>
 </template>
 
