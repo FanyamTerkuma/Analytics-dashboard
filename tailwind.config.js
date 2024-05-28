@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+    darkMode: 'class',
     content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
     theme: {
         fontFamily: {
@@ -12,7 +13,6 @@ export default {
                 success: '#00AC56',
                 error: '#FF1F7D',
                 warning: '#F5BF3D',
-                white: 'FFFFFF',
                 background: '#FDFDFD'
             }
         }

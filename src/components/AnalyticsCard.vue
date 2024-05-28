@@ -1,19 +1,19 @@
 <template>
-    <div class="container bg-[#FFFFFF] flex flex-col gap-3 justify-center border shadow-sm rounded-xl px-2 py-4 size-fit">
+    <div class="container dark:bg-slate-800 bg-[#FFFFFF] flex flex-col gap-3 justify-center border dark:border-0 shadow-sm rounded-xl px-2 py-4 size-fit">
         <div class="flex justify-between items-center">
             <slot name="icon"></slot>
             <div class="mt-[-10%] w-[50%] h-[20%]"><Line :options="chartOptions" :data="chartData" height="30" width="60" /></div>
         </div>
         <div class="">
-            <h1 class="text-lg capitalize font-medium text-[#898989]">{{ title }}</h1>
-            <h2 class="text-2xl font-semibold text-[#3A3F51]">{{ amount }}</h2>
+            <h1 class="text-lg capitalize font-medium dark:text-white text-[#898989]">{{ title }}</h1>
+            <h2 class="text-2xl font-semibold dark:text-slate-400 text-[#3A3F51]">{{ amount }}</h2>
         </div>
         <div class="flex gap-2 items-center">
             <span class="flex items-center gap-2 text-primary text-xs bg-[#e7f9f4] p-2 rounded-full" :class="{ 'text-red-400 bg-[#fdeaea]': plummet }">
                 <slot name="trendIcon"></slot>
                 <p>{{ percentage }}%</p>
             </span>
-            <p class="text-[#606060] text-sm">vs. previous month</p>
+            <p class="dark:text-slate-300 text-[#606060] text-sm">vs. previous month</p>
         </div>
     </div>
 </template>

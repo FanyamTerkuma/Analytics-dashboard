@@ -11,7 +11,7 @@
             <p v-else class="text-red-500">Refund</p>
         </td>
         <td class="flex items-center gap-1 cursor-pointer">
-            <DocumentDownload />
+            <div class="dark:bg-slate-300 p-1 rounded-lg shadow-sm"><DocumentDownload /></div>
             <p>View</p>
         </td>
     </tr>
